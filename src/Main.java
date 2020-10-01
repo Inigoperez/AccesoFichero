@@ -1,15 +1,16 @@
-package com.company;
-
+import java.awt.*;
+import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
 
-    public static void main(String[] args) {
+public class Main extends Component {
 
+    public static void main(String[] args) throws IOException {
+        Lectura.leer();
         int seleccion = 0;
         Scanner sc = new Scanner(System.in);
 
-        while(seleccion == 0) {
+        while(seleccion != 5) {
             try{
                 System.out.println("Elige opción:\n1.- Mostrar usuarios" + "\n2.- Añadir usuario\n" + "3.- Eliminar usuario (mediante ID)\n" + "4.- Informacion de usuario (mediante ID)\n" + "5.- Cambiar nombre usuario (Mediante ID)\n"+"5.- Salir");
                 seleccion = sc.nextInt();
