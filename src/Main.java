@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main extends Component {
 
     public static void main(String[] args) throws IOException {
-        Lectura.leer();
         int seleccion = 0;
         Scanner sc = new Scanner(System.in);
 
@@ -18,10 +17,10 @@ public class Main extends Component {
                 //Ejemplo de switch case en Java
                 switch(seleccion){
                     case 1:
-
+                        Lectura.leer();
                         break;
                     case 2:
-
+                        MostrarUsuarios.listarUsuarios();
                         break;
                     case 3:
 
