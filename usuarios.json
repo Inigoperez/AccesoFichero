@@ -1,1 +1,9 @@
-[{"Nombre":"Jon","Edad":18,"Id":1,"Localidad":"Ordizia"},{"Nombre":"Leire","Edad":20,"Id":2,"Localidad":"Irun"},{"Nombre":"Maria","Edad":19,"Id":3,"Localidad":"Donostia"},{"Nombre":"Laura","Edad":20,"Id":4,"Localidad":"Lazkao"},{"Nombre":"Gorka","Edad":25,"Id":5,"Localidad":"Bergara"}]
+{
+  "usuarios":[
+    {"Nombre":"Jon","Edad":18,"Id":1,"Localidad":"Ordizia"},
+    {"Nombre":"Leire","Edad":20,"Id":2,"Localidad":"Irun"},
+    {"Nombre":"Maria","Edad":19,"Id":3,"Localidad":"Donostia"},
+    {"Nombre":"Laura","Edad":20,"Id":4,"Localidad":"Lazkao"},
+    {"Nombre":"Gorka","Edad":25,"Id":5,"Localidad":"Bergara"}
+  ]
+}

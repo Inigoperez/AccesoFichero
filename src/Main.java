@@ -11,7 +11,7 @@ public class Main extends Component {
 
         while(seleccion != 5) {
             try{
-                System.out.println("Elige opción:\n1.- Mostrar usuarios" + "\n2.- Añadir usuario\n" + "3.- Eliminar usuario (mediante ID)\n" + "4.- Informacion de usuario (mediante ID)\n" + "5.- Cambiar nombre usuario (Mediante ID)\n"+"5.- Salir");
+                System.out.println("Elige opción:\n1.- Cargar usuarios" + "\n2.- Mostrar usuarios\n" + "3.- Añadir usuario nuevo\n" + "4.- Eliminar usuario (mediante ID)\n" + "5.- Detalles de usuario (Mediante ID)\n"+"6.- Modificar Nombre de usuario (mediante ID)\n"+"7.- Salir");
                 seleccion = sc.nextInt();
 
                 //Ejemplo de switch case en Java

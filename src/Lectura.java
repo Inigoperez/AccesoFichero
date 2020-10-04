@@ -7,7 +7,7 @@ public class Lectura {
     public static void leer() throws IOException {
         JSONObject jo = new JSONObject();
         Usuario persona;
-        File fichero = new File("C:\\Users\\2dam3.HZ114473.000\\workspace\\AACC\\AccesoFicheros\\FichUsuarios.dat");
+        File fichero = new File("FichUsuarios.dat");
         FileInputStream filein = new FileInputStream(fichero);
         ObjectInputStream datIS = new ObjectInputStream(filein);
         JSONArray Lista = new JSONArray();
