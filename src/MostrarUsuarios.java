@@ -13,7 +13,11 @@ import java.util.Map;
 public class MostrarUsuarios {
 
     public static void listarUsuarios() throws IOException, ParseException {
+
+        //Traemos el array de usuarios //
         JSONArray array = Lectura.vueltadatos();
+
+        //Hacemos un bucle donde mostramos todos los usuarios del array//
         for(int i=0;i<array.size();i++){
             JSONObject persona = (JSONObject) array.get(i);
             System.out.println("----------------------------------");
