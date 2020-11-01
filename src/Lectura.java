@@ -29,11 +29,10 @@ public class Lectura {
         } catch (EOFException | ClassNotFoundException eo) {
             datIS.close();
         }
-
         jo.put("usuarios", Lista);
         // writing JSON to file:"JSONExample.json" in cwd
         PrintWriter pw = new PrintWriter("usuarios.json");
-        pw.write(Lista.toJSONString());
+        pw.write(jo.toJSONString());
 
         pw.flush();
         pw.close();

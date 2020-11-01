@@ -2,7 +2,6 @@ import java.awt.*;
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class Main extends Component {
 
     public static void main(String[] args) throws IOException {
@@ -23,7 +22,7 @@ public class Main extends Component {
                         MostrarUsuarios.listarUsuarios();
                         break;
                     case 3:
-
+                        CrearUsuario.crearUsuario();
                         break;
                     case 4:
 
@@ -32,7 +31,8 @@ public class Main extends Component {
                         System.out.println("Adios!");
                         break;
                     default:
-                        System.out.println("Número no reconocido");break;
+                        System.out.println("Número no reconocido");
+                        break;
                 }
             }catch(Exception e){
                 System.out.println("Uoop! Error!");
