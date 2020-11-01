@@ -25,7 +25,7 @@ public class Main extends Component {
                         CrearUsuario.crearUsuario();
                         break;
                     case 4:
-
+                        EliminarUsuario.eliminarUsuario();
                         break;
                     case 5:
                         System.out.println("Adios!");
