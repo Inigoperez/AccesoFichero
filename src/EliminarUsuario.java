@@ -12,10 +12,7 @@ public class EliminarUsuario {
     private static Scanner sc = new Scanner(System.in);
 
     public static void eliminarUsuario() throws IOException, ParseException {
-        JSONObject  obj = (JSONObject) new JSONParser().parse(new FileReader("usuarios.json"));
-        Iterator<Map.Entry> iteratorCampos = obj.entrySet().iterator();
-        Map.Entry parCampo = iteratorCampos.next();
-        JSONArray array = (JSONArray) parCampo.getValue();
+        JSONArray array = Lectura.vueltadatos();
 
         System.out.println("Introduce el ID del usuario que desees eliminar: ");
         long idElim = sc.nextLong();

@@ -8,7 +8,7 @@ public class Main extends Component {
         int seleccion = 0;
         Scanner sc = new Scanner(System.in);
 
-        while(seleccion != 5) {
+        while(seleccion != 7) {
             try{
                 System.out.println("Elige opción:\n1.- Cargar usuarios" + "\n2.- Mostrar usuarios\n" + "3.- Añadir usuario nuevo\n" + "4.- Eliminar usuario (mediante ID)\n" + "5.- Detalles de usuario (Mediante ID)\n"+"6.- Modificar Nombre de usuario (mediante ID)\n"+"7.- Salir");
                 seleccion = sc.nextInt();
@@ -28,6 +28,12 @@ public class Main extends Component {
                         EliminarUsuario.eliminarUsuario();
                         break;
                     case 5:
+                        ConsultarUsuario.consultarUsuario();
+                        break;
+                    case 6:
+                        EditarUsuario.editarUsuario();
+                        break;
+                    case 7:
                         System.out.println("Adios!");
                         break;
                     default:

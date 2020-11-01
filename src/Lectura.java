@@ -1,7 +1,11 @@
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Lectura {
     public static void leer() throws IOException {
@@ -37,5 +41,12 @@ public class Lectura {
         pw.flush();
         pw.close();
 
+    }
+    public static JSONArray vueltadatos() throws IOException, ParseException {
+        JSONObject obj = (JSONObject) new JSONParser().parse(new FileReader("usuarios.json"));
+        Iterator<Map.Entry> iteratorCampos = obj.entrySet().iterator();
+        Map.Entry parCampo = iteratorCampos.next();
+        JSONArray array = (JSONArray) parCampo.getValue();
+        return array;
     }
 }

@@ -13,10 +13,7 @@ import java.util.Map;
 public class MostrarUsuarios {
 
     public static void listarUsuarios() throws IOException, ParseException {
-        JSONObject  obj = (JSONObject) new JSONParser().parse(new FileReader("usuarios.json"));
-        Iterator<Map.Entry> iteratorCampos = obj.entrySet().iterator();
-        Map.Entry parCampo = iteratorCampos.next();
-        JSONArray array = (JSONArray) parCampo.getValue();
+        JSONArray array = Lectura.vueltadatos();
         for(int i=0;i<array.size();i++){
             JSONObject persona = (JSONObject) array.get(i);
             System.out.println("----------------------------------");

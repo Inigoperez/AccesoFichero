@@ -16,17 +16,8 @@ public class CrearUsuario {
     private static Scanner sc = new Scanner(System.in);
 
     public static void crearUsuario() throws IOException, ParseException {
-        System.out.println("error1");
-        JSONObject obj = (JSONObject) new JSONParser().parse(new FileReader("usuarios.json"));
-        System.out.println("error2");
-        Iterator<Map.Entry> iteratorCampos = obj.entrySet().iterator();
-        System.out.println("error3");
-        Map.Entry parCampo = iteratorCampos.next();
-        System.out.println("error4");
-        JSONArray array = (JSONArray) parCampo.getValue();
-        System.out.println("error5");
+        JSONArray array = Lectura.vueltadatos();
         JSONObject ultimoID = (JSONObject) array.get(array.size()-1);
-        System.out.println(ultimoID.get("Id"));
         long id = (long) ultimoID.get("Id");
 
 
